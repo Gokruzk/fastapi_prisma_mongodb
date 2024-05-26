@@ -18,7 +18,7 @@ async def get_all():
 
 @router.post(path="", response_model=ResponseSchema, response_model_exclude_none=True)
 async def create_user(data: User):
-    data.password = sha256_crypt.encrypt(data.password)
+    data.psw = sha256_crypt.encrypt(data.psw)
     await UserRoutes.create(data)
     return ResponseSchema(detail="Successfully created")
 
