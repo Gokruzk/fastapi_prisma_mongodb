@@ -16,7 +16,7 @@ Database: orchestra
 
 | users_   | 
 |----------|
-| id (PK)  |
+| _id (PK) |
 | username |
 | email    |
 | psw      |
