@@ -18,11 +18,11 @@ class UserRoutes:
 
     @staticmethod
     async def get_by_dni(id: str):
-        return await conn.prisma.user.find_first_or_raise(where={"_id": ObjectId(id)})
+        return await conn.prisma.user.find_first_or_raise(where={"id": id})
 
     @staticmethod
     async def delete(id: str):
-        return await conn.prisma.user.delete(where={"_id": ObjectId(id)})
+        return await conn.prisma.user.delete(where={"id": id})
 
     @staticmethod
     async def update(user: User, id: str):
@@ -31,4 +31,4 @@ class UserRoutes:
             "email": user.email,
             "psw": user.psw
         },
-            where={"_id": ObjectId(id)})
+            where={"id": id})
