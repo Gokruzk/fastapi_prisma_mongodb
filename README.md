@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 ## Database
 
-Collection: users
+Collection: users  
 Database: orchestra
 
 | users_   | 
