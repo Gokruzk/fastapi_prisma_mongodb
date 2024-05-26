@@ -13,4 +13,6 @@ model User {
     username String
     email    String
     psw      String
+
+    @@map("users")
 }
