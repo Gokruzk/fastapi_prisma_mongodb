@@ -1,0 +1,9 @@
+# prisma commands
+prisma generate dev --name "init table"
+prisma generate
+
+#mongod commands
+mongod --replSet rs0 --port 27017 --dbpath C:\data\db
+
+#mongosh commands
+rs.initiate()
